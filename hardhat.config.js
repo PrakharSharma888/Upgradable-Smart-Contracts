@@ -1,4 +1,3 @@
-require("@nomicfoundation/hardhat-toolbox");
 require("@openzeppelin/hardhat-upgrades")
 require('@nomiclabs/hardhat-etherscan')
 require('@nomicfoundation/hardhat-ethers')

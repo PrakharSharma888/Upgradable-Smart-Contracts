@@ -10,11 +10,11 @@ contract UNFT is Initializable, ERC721Upgradeable, UUPSUpgradeable, OwnableUpgra
     function initialize() public initializer{
 
         __ERC721_init("Upgradeable NFT","UNFT");
-        __Ownable_init();
         _mint(msg.sender, 1);
+        __Ownable_init();
+        
     }
 
-    function _authorizeUpgrade(address newImplementation) internal override onlyOwner{ // ability to add authorization on who can actually upgrade the given contract
-
+    function _authorizeUpgrade(address newImplementation) internal override onlyOwner {
     }
 }

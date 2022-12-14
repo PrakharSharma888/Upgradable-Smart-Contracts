@@ -1,13 +1,11 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
-import './UNFT.sol';
+import './UNFT3.sol';
 
 contract UNFT2 is UNFT {
 
-    function test() view public returns(string memory){
+    function test() pure public returns(string memory){
         return "Upgraded";
     }
-
-    // Note : Openzeppelin deploys and connects a Proxy Contract automatically when we use there library to deploy the Implementation Contract
 }
